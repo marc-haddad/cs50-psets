@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <table class="table table-bordered table-hover table-condensed">
+        <h2>Sheet</h2>
+        <th>Name</th>
+        <th>Human?</th>
+        <th>Planet</th>
+        {% for row in table %}
+        <tr>
+            <td>{{ row.0 }}</td><td>{{ row.1 }}</td><td>{{ row.2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

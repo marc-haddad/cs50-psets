@@ -1,0 +1,24 @@
+Goal of code:
+    Take hashed password in argv
+
+        identify salt
+
+            first 2 chars of provided hash
+
+        place salt in crypt.crypt function
+
+        brute force password
+
+            search every combination of upper and lowercase letters
+            in the plaintext portion of crypt.crypt
+
+                by having an empty 5 char string
+
+                    sequentially fill every position in that string
+                    with every possible letter
+
+                        place string in crypt func
+
+                            until hashed password equals provided hash
+
+    print the plaintext that is associated with hash
